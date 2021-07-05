@@ -1,4 +1,4 @@
-import {ApplicationConfig, LoopbackPaymentsApplication} from './application';
+import { ApplicationConfig, LoopbackPaymentsApplication } from './application';
 
 export * from './application';
 
@@ -32,7 +32,7 @@ if (require.main === module) {
       },
     },
   };
-  main(config).catch(err => {
+  main(config).catch((err) => {
     console.error('Cannot start the application.', err);
     process.exit(1);
   });
