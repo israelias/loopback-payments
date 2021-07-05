@@ -1,7 +1,7 @@
 {
   "editor.rulers": [80],
   "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
+  // "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -21,12 +21,18 @@
   "files.trimTrailingWhitespace": true,
 
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-  "typescript.preferences.quoteStyle": "single",
+  // "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  // "typescript.preferences.quoteStyle": "single",
   "eslint.run": "onSave",
   "eslint.nodePath": "./node_modules",
   "eslint.validate": [
     "javascript",
     "typescript"
-  ]
+  ],
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
 }
